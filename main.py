@@ -19,7 +19,7 @@ article_list = []
 
 body = ""
 # Access the article titles and descriptions
-for article in content["articles"]:
+for article in content["articles"][:20]:
     if article["title"] and article["description"] is not None:
         body = body + article["title"] + "\n" + article["description"] + "\n" + article["url"] + 2*"\n"
 

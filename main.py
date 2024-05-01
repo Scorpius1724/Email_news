@@ -17,7 +17,7 @@ content = request.json()
 
 article_list = []
 
-body = ""
+body = "Subject: Today's news" + "\n"
 # Access the article titles and descriptions
 for article in content["articles"][:20]:
     if article["title"] and article["description"] is not None:

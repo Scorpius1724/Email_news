@@ -3,9 +3,11 @@ from send_email import send_email
 
 # Store the API key and URL Link
 api_key = "92c33adb87f44865aa0bc5c8772cb6e4"
-url = "https://newsapi.org/v2/everything" \
-      "?q=tesla&sortBy=publishedAt&apiKey=" \
-      "92c33adb87f44865aa0bc5c8772cb6e4"
+url = "https://newsapi.org/v2/everything?" \
+      "q=tesla&" \
+      "sortBy=publishedAt&" \
+      "apiKey=92c33adb87f44865aa0bc5c8772cb6e4&" \
+      "language=en"
 
 # Make request
 request = requests.get(url)

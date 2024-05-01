@@ -18,8 +18,8 @@ article_list = []
 body = ""
 # Access the article titles and descriptions
 for article in content["articles"]:
-    if article["title"] is not None:
-        body = body + article["title"] + "\n" + article["description"] + 2*"\n"
+    if article["title"] and article["description"] is not None:
+        body = body + article["title"] + "\n" + article["description"] + "\n" + article["url"] + 2*"\n"
 
 body = body.encode("utf-8")
 send_email(message=body)
